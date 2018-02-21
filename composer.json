@@ -3,11 +3,11 @@
     "authors": [
         {
             "name": "Edward van der Jagt",
-            "email": "edward@caret.net",
+            "email": "edward@caret.net"
         },
         {
             "name": "Dennis Smink",
-            "email": "dennissmink@gmail.com"
+            "email": "dennissmink@gmail.com",
             "role": "Original package developer"
         }
     ],
