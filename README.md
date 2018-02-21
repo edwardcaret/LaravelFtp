@@ -12,7 +12,7 @@ It also utilises the collection package, files are returned as collection so you
 Require this package with composer:
 
 ```
-composer require dennissmink/laravel-ftp dev-master
+composer require edwardcaret/laravel-ftp dev-master
 ```
 
 ## Usage
@@ -62,4 +62,13 @@ $ftp->emptyDirectory('directory name'); // Emptys a directory but keeps the dire
 
 ## Links
 
+*Original package:*
+
 Packagist: https://packagist.org/packages/dennissmink/laravel-ftp
+
+Github: https://github.com/Cannonb4ll/LaravelFtp
+
+*My version:*
+
+Github: https://github.com/edwardcaret/LaravelFtp
+
