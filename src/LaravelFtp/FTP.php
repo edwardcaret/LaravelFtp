@@ -39,6 +39,19 @@ class FTP
     }
 
     /**
+     * public function setMode
+     *
+     *
+     * @param int       $mode
+     *
+     * @throws \Exception
+     */
+    public function setMode( $mode = FTP_ASCII)
+    {
+        $this->mode = $mode;
+    }
+
+    /**
      * public function all
      *
      *
@@ -107,13 +120,8 @@ class FTP
      *
      * @return string
      */
-    public function download($localFile = '', $remoteFile = '', $maxSize = 512000)
+    public function download($localFile = '', $remoteFile = '')
     {
-        $sizeFile = $this->size($remoteFile);
-        if ($sizeFile > $maxSize) { // 512 000 KB
-            return 'This file is too big to read, maximum filesize allowed to the browser: 512KB';
-        }
-
         if (@ftp_get($this->connection, $localFile, $remoteFile, $this->mode, 0)) {
             return true;
         }
